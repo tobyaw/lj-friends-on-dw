@@ -1,11 +1,11 @@
-.h1 Dreamwidth tools
+h1. Dreamwidth tools
 
 Some handy utilities to use with Dreamwidth.
 
-.h2 lj_friends_of_dw.rb
+h2. lj_friends_of_dw.rb
 
 This is a simple Ruby script that takes one or more LJ usernames on the command line, and prints out a list of which of their LJ friends exist as accounts on Dreamwidth.
 
-.h2 lj_friends_of_dw (folder)
+h2. lj_friends_of_dw (folder)
 
 This is an HTML page and JavaScript code that does a similar task.
