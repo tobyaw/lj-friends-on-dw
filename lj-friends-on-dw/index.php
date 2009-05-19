@@ -17,8 +17,8 @@ $user = isset($_GET['user']) ? $_GET['user'] : '';
 <div id="page">
 <h1>LiveJournal friends on Dreamwidth</h1>
 
-<p>Enter a LiveJournal username to check. This will fetch a list of your LJ friends, and will then check to see if Dreamwidth accounts with the same names exist. (Note: even if a Dreamwidth username exists, it doesn’t mean that it is the same person as the LiveJournal username!)</p>
-<form id="ui" action="./" method="get">
+<p>Enter a LiveJournal username to check. This will fetch a list of your LiveJournal friends, and will then check to see if Dreamwidth accounts with the same names exist. (Note: even if a Dreamwidth username exists, it doesn’t mean that it is the same person as the LiveJournal username!)</p>
+<form action="./" method="get">
 <p>
 	<input name="user" type="text" value="<?php print $user;?>"/>
 	<input type="submit" ="Check"/>
@@ -39,6 +39,9 @@ function dreamwidth_user($user)
 
 	return "<span><a href='http://" . $user_url . ".dreamwidth.org/profile'><img src='http://s.dreamwidth.org/img/silk/identity/user.png' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://" . $user_url . ".dreamwidth.org/'><b>" . $user . "</b></a></span>";
 }
+
+$author = dreamwidth_user('tobyaw');
+print "<p>Writted by $author; source available at <a href=\"http://github.com/filmgold/dw-tools\">http://github.com/filmgold/dw-tools</a>.</p>\n";
 
 if ($user != "")
 {
@@ -63,7 +66,7 @@ if ($user != "")
 
 	if (count($friends) > 0)
 	{
-		print "<p>Friends of LiveJournal user $livejournal_user:</p>\n";
+		print "<p>LiveJournal friends of $livejournal_user:</p>\n";
 		print "<ul>\n";
 		flush();
 
@@ -71,7 +74,7 @@ if ($user != "")
 		{
 			$livejournal_friend = livejournal_user($friend);
 			
-			print "<li>LiveJournal user $livejournal_friend ";
+			print "<li>$livejournal_friend ";
 			
 			if (preg_match('/^<h1>Unknown User/', file_get_contents("http://users.dreamwidth.org/$friend")))
 			{
@@ -80,7 +83,7 @@ if ($user != "")
 			else
 			{
 				$dreamwidth_user = dreamwidth_user($friend);
-				print "may be user $dreamwidth_user on Dreamwidth.";
+				print "may be $dreamwidth_user on Dreamwidth.";
 			}
 			
 			print "</li>\n";
