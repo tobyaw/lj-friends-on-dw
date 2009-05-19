@@ -42,6 +42,8 @@ function dreamwidth_user($user)
 
 if ($user != "")
 {
+	print "<hr/>\n";
+
 	$friends = array();
 
 	foreach (explode("\n", file_get_contents("http://www.livejournal.com/misc/fdata.bml?user=$user")) as $row)
