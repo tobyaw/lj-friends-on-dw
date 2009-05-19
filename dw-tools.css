@@ -16,13 +16,3 @@ body
 	font-size: 18px;
 	font-family: "Myriad Pro", Myriad, Helvetica, sans-serif;
 }
-
-table#results
-{
-	display: none;
-}
-
-p#no-results
-{
-	display: none;
-}
