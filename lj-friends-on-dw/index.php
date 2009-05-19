@@ -43,6 +43,7 @@ function dreamwidth_user($user)
 if ($user != "")
 {
 	print "<hr/>\n";
+	flush();
 
 	$friends = array();
 
@@ -63,8 +64,9 @@ if ($user != "")
 	if (count($friends) > 0)
 	{
 		print "<p>Friends of LiveJournal user $livejournal_user:</p>\n";
-		
 		print "<ul>\n";
+		flush();
+
 		foreach ($friends as $friend)
 		{
 			$livejournal_friend = livejournal_user($friend);
