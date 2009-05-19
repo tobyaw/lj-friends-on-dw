@@ -1,0 +1,28 @@
+div#page
+{
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+	padding: 8px;
+}
+
+body
+{
+	color: black;
+	background-color: white;
+	border: 0px;
+	margin: 0px;
+	text-align: left;
+	font-size: 18px;
+	font-family: "Myriad Pro", Myriad, Helvetica, sans-serif;
+}
+
+table#results
+{
+	display: none;
+}
+
+p#no-results
+{
+	display: none;
+}
