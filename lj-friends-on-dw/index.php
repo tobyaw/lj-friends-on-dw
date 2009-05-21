@@ -21,15 +21,17 @@ function dreamwidth_user($user)
         return "<span><a href='http://" . $user_url . ".dreamwidth.org/profile'><img src='http://s.dreamwidth.org/img/silk/identity/user.png' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://" . $user_url . ".dreamwidth.org/'><b>" . $user . "</b></a></span>";
 }
 
-$author = dreamwidth_user('tobyaw');
+$author_toby = dreamwidth_user('tobyaw');
+$author_james = dreamwidth_user('deadnode');
 ?><?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+<meta name="verify-v1" content="iHbI1Y0WkkRuoB23hIrxSye+Aeyg3eOyjvPfPkg3Rfg="/>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
-<link rel="stylesheet" type="text/css" href="../dw-tools.css"/>
+<link rel="stylesheet" type="text/css" href="lj-friends-on-dw.css"/>
 <title>LiveJournal friends on Dreamwidth</title>
 </head>
 
@@ -37,8 +39,7 @@ $author = dreamwidth_user('tobyaw');
 
 <div id="page">
 <h1>LiveJournal friends on Dreamwidth</h1>
-
-<p>Enter a LiveJournal username to check. This will fetch a list of your LiveJournal friends, and will then check to see if Dreamwidth accounts with the same names exist. (Note: even if a Dreamwidth username exists, it doesn’t mean that it is the same person as the LiveJournal username!) Writted by <?php print $author;?>; source available at <a href="http://github.com/filmgold/dw-tools">http://github.com/filmgold/dw-tools</a>.</p>
+<p>Enter a LiveJournal username to check. This will fetch a list of your LiveJournal friends, and will then check to see if Dreamwidth accounts with the same names exist. (Note: even if a Dreamwidth username exists, it is not necessarily the same person as the LiveJournal username!) Written by <?php print $author_toby;?> with input from <?php print $author_james;?>.</p>
 <form action="./" method="get">
 <p>
 	LiveJournal username:
@@ -110,7 +111,7 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
 </script>
 <script type="text/javascript">
 try {
-var pageTracker = _gat._getTracker("UA-6686527-4");
+var pageTracker = _gat._getTracker("UA-6686527-6");
 pageTracker._trackPageview();
 } catch(err) {}</script>
 
