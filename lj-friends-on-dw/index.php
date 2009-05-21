@@ -100,6 +100,7 @@ if ($user != "")
 	{
 		print "<p><em>No LiveJournal friends were found for $livejournal_user.</em></p>\n";
 	}
+        print "<hr/>\n";
 }
 ?>
 
