@@ -38,7 +38,7 @@ $author = dreamwidth_user('tobyaw');
 <div id="page">
 <h1>LiveJournal friends on Dreamwidth</h1>
 
-<p>Enter a LiveJournal username to check. This will fetch a list of your LiveJournal friends, and will then check to see if Dreamwidth accounts with the same names exist. (Note: even if a Dreamwidth username exists, it doesn’t mean that it is the same person as the LiveJournal username!) Writted by <?php print $author;?>; source available at <a href=\"http://github.com/filmgold/dw-tools\">http://github.com/filmgold/dw-tools</a>.</p>
+<p>Enter a LiveJournal username to check. This will fetch a list of your LiveJournal friends, and will then check to see if Dreamwidth accounts with the same names exist. (Note: even if a Dreamwidth username exists, it doesn’t mean that it is the same person as the LiveJournal username!) Writted by <?php print $author;?>; source available at <a href="http://github.com/filmgold/dw-tools">http://github.com/filmgold/dw-tools</a>.</p>
 <form action="./" method="get">
 <p>
 	LiveJournal username:
