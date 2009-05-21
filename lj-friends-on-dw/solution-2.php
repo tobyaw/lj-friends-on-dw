@@ -78,9 +78,9 @@ if ($user != "")
 		foreach ($friends as $friend)
 		{
 			$livejournal_friend = livejournal_user($friend);
-			
+
 			print "<li>$livejournal_friend ";
-			
+
 			if (preg_match('/^<h1>Unknown User/', file_get_contents("http://users.dreamwidth.org/$friend")))
 			{
 				print "is not found on Dreamwidth.";
@@ -90,7 +90,7 @@ if ($user != "")
 				$dreamwidth_user = dreamwidth_user($friend);
 				print "may be $dreamwidth_user on Dreamwidth.";
 			}
-			
+
 			print "</li>\n";
 			ob_flush(); flush();
 		}
@@ -99,7 +99,7 @@ if ($user != "")
 	else
 	{
 		print "<p><em>No LiveJournal friends were found for $livejournal_user.</em></p>\n";
-	}	
+	}
 }
 ?>
 
