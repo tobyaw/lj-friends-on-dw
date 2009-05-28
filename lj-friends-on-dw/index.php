@@ -31,8 +31,27 @@ $author_james = dreamwidth_user('deadnode');
 <head>
 <meta name="verify-v1" content="iHbI1Y0WkkRuoB23hIrxSye+Aeyg3eOyjvPfPkg3Rfg="/>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
-<link rel="stylesheet" type="text/css" href="lj-friends-on-dw.css"/>
 <title>LiveJournal friends on Dreamwidth</title>
+<style type="text/css">
+div#page
+{
+        margin-right: auto;
+        margin-left: auto;
+        width: 90%;
+        padding: 8px;
+}
+
+body
+{
+        color: black;
+        background-color: white;
+        border: 0px;
+        margin: 0px;
+        text-align: left;
+        font-size: 18px;
+        font-family: "Myriad Pro", Myriad, Helvetica, sans-serif;
+}
+</style>
 </head>
 
 <body>
@@ -101,10 +120,11 @@ if ($user != "")
 	{
 		print "<p><em>No LiveJournal friends were found for $livejournal_user.</em></p>\n";
 	}
-        print "<hr/>\n";
 }
 ?>
-
+<hr/>
+<p>If you want to leave a comment about this page, do so at my Dreamwidth entry <a href="http://tobyaw.dreamwidth.org/149587.html">http://tobyaw.dreamwidth.org/149587.html</a> or at my post on the Dreamwidth LiveJournal community <a href="http://community.livejournal.com/dreamwidth/20074.html">http://community.livejournal.com/dreamwidth/20074.html</a>. The PHP source code for this page is available at <a href="http://github.com/filmgold/dw-tools">http://github.com/filmgold/dw-tools</a>.</p>
+</div>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
