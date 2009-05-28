@@ -123,7 +123,7 @@ if ($user != "")
 }
 ?>
 <hr/>
-<p>If you want to leave a comment about this page, do so at my Dreamwidth entry <a href="http://tobyaw.dreamwidth.org/149587.html">http://tobyaw.dreamwidth.org/149587.html</a> or at my post on the Dreamwidth LiveJournal community <a href="http://community.livejournal.com/dreamwidth/20074.html">http://community.livejournal.com/dreamwidth/20074.html</a>. The PHP source code for this page is available at <a href="http://github.com/filmgold/dw-tools">http://github.com/filmgold/dw-tools</a>.</p>
+<p>If you want to leave a comment about this page, do so at my post on the Dreamwidth LiveJournal community <a href="http://community.livejournal.com/dreamwidth/20074.html">http://community.livejournal.com/dreamwidth/20074.html</a>. The PHP source code for this page is available at <a href="http://github.com/filmgold/dw-tools">http://github.com/filmgold/dw-tools</a>.</p>
 </div>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
