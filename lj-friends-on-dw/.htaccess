@@ -1,4 +1,0 @@
-SetEnv no-gzip
-<IfModule mod_fastcgi.c>
-	FastCgiConfig -flush
-</IfModule>
