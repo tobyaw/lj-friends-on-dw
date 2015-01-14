@@ -6,4 +6,4 @@ This is a simple Ruby script that takes one or more LJ usernames on the command 
 
 h2. lj-friends-on-dw (folder)
 
-This is an HTML page with PHP code that does a similar task. Try it at "http://lj-friends-on-dw.filmgold.com/":http://lj-friends-on-dw.filmgold.com/
+This is an HTML page with PHP code that does a similar task. 
